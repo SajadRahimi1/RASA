@@ -1,5 +1,6 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
+using RASA.Utility.Helper;
 
 namespace RASA.Infrastructure.Repositories.RabbitMQ;
 
@@ -14,7 +15,13 @@ public class RabbitMqRepository
 
     private RabbitMqRepository()
     {
-        var factory = new ConnectionFactory { HostName = "localhost" };
+        var rabbitMqConnection = SandBoxHelper.RabbitMqConnection();
+        var factory = new ConnectionFactory
+        {
+            HostName = rabbitMqConnection.HostName, UserName = rabbitMqConnection.UserName,
+            Password = rabbitMqConnection.Password, Port = rabbitMqConnection.Port
+        };
+        
         using var connection = factory.CreateConnection();
         _channel = connection.CreateModel();
         _channel.QueueDeclare(queue: "sms",

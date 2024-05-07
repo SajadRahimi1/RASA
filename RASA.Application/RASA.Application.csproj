@@ -11,6 +11,7 @@
     <ItemGroup>
       <ProjectReference Include="..\RASA.Common\RASA.Common.csproj" />
       <ProjectReference Include="..\RASA.Infrastructure\RASA.Infrastructure.csproj" />
+      <ProjectReference Include="..\RASA.Utility\RASA.Utility.csproj" />
     </ItemGroup>
 
     <ItemGroup>
