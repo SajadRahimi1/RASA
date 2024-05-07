@@ -19,16 +19,16 @@ public class HttpClientRepository:IHttpClientRepository
        
        var requestMessage = new HttpRequestMessage()
        {
-           Method = new HttpMethod(nameof(requestEntity.Method)),
+           Method = new HttpMethod(requestEntity.Method.ToString()),
            RequestUri = new Uri(requestEntity.Url)
        };
 
-       foreach (var header in requestEntity.Header)   
+       foreach (var header in requestEntity.Header??new Dictionary<string, string>())   
        {
            requestMessage.Headers.Add(header.Key,header.Value);
        }
 
-       if (requestEntity.Body.Any())
+       if (requestEntity.Body is not null &&  requestEntity.Body.Any())
        {
            requestMessage.Content = new FormUrlEncodedContent(requestEntity.Body);
        }
