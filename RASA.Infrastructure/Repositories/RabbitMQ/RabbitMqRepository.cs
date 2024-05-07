@@ -8,9 +8,9 @@ public class RabbitMqRepository
     private static IModel? _channel;
     private static EventingBasicConsumer _consumer;
 
-    private RabbitMqRepository? _instance = null;
+    private static RabbitMqRepository? _instance = null;
 
-    public RabbitMqRepository Instance => _instance ??= new RabbitMqRepository();
+    public static RabbitMqRepository Instance => _instance ??= new RabbitMqRepository();
 
     private RabbitMqRepository()
     {
@@ -25,7 +25,7 @@ public class RabbitMqRepository
         _consumer = new EventingBasicConsumer(_channel);
     }
 
-    public static void Listen(EventHandler<BasicDeliverEventArgs> eventHandler)
+    public void Listen(EventHandler<BasicDeliverEventArgs> eventHandler)
     {
         _consumer.Received += eventHandler;
         _channel.BasicConsume(queue: "sms", autoAck: true, consumer: _consumer);

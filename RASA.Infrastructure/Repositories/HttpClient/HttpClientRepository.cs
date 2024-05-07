@@ -16,6 +16,7 @@ public class HttpClientRepository:IHttpClientRepository
 
    public async Task<HttpResponseMessage> SendAsync(RequestEntity requestEntity)
    {
+       
        var requestMessage = new HttpRequestMessage()
        {
            Method = new HttpMethod(nameof(requestEntity.Method)),

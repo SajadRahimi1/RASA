@@ -1,12 +1,10 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASA.Domain", "RASA.Domain\RASA.Domain.csproj", "{9A906034-3660-4C80-B620-CA2F883473EC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASA.Application", "RASA.Application\RASA.Application.csproj", "{14BF55C7-7144-4642-9F11-BD7CBAEB2EB9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASA.Infrastructure", "RASA.Infrastructure\RASA.Infrastructure.csproj", "{07B47183-025A-4B08-AB52-FF60A7158451}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASA.Common", "RASA.Common\RASA.Common.csproj", "{7BBE4B84-BA49-42A7-AACB-FAE1C10A4663}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RASA.Application", "RASA.Application\RASA.Application.csproj", "{FF06B1AF-2084-4766-9B22-34D207F88CF9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,14 +12,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A906034-3660-4C80-B620-CA2F883473EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A906034-3660-4C80-B620-CA2F883473EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A906034-3660-4C80-B620-CA2F883473EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A906034-3660-4C80-B620-CA2F883473EC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14BF55C7-7144-4642-9F11-BD7CBAEB2EB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{14BF55C7-7144-4642-9F11-BD7CBAEB2EB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14BF55C7-7144-4642-9F11-BD7CBAEB2EB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{14BF55C7-7144-4642-9F11-BD7CBAEB2EB9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{07B47183-025A-4B08-AB52-FF60A7158451}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{07B47183-025A-4B08-AB52-FF60A7158451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07B47183-025A-4B08-AB52-FF60A7158451}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -30,5 +20,9 @@ Global
 		{7BBE4B84-BA49-42A7-AACB-FAE1C10A4663}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7BBE4B84-BA49-42A7-AACB-FAE1C10A4663}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7BBE4B84-BA49-42A7-AACB-FAE1C10A4663}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF06B1AF-2084-4766-9B22-34D207F88CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF06B1AF-2084-4766-9B22-34D207F88CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF06B1AF-2084-4766-9B22-34D207F88CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF06B1AF-2084-4766-9B22-34D207F88CF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
